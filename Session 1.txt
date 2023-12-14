@@ -35,11 +35,39 @@ Storage :
  
  -> Every file contain Some Extension like .c .cpp .html but file which is not 
  related to perticular technologies is called flat file.
- -> 
+  
+ # Drawback of using file as data storager
+ -----------------------------------------
+  -> Data Redundancy 
+  -> Data Inconsistency  [ data is in two file and after modifying one file changes has to be redirected in second one also if not happened it is called as data Inconsistency]
+  -> Data Security 
+  -> Storage
+  -> No Transaction support 
+  -> No Constraint support
  
- 
- 
+@Solution for this is : <Database>
 
+ 
+ Data / Java Objects     ----->   JDBC    ----->  Database
+ ===================              ====            ======== 
+ 
+ To perform CRUD operations JDBC technologies is use.
+ 
+ Requirement : Want to store Employee Objects into Database using JDBC vice-versa?
+ So problem is it deal with queries so 
+ executeUpdate(Employee) : Error (Employee is object)
+ executeQuery(Employee) : Error 
+ insert into emp_table values(Employee) : Error
+ 
+ Process : 
+ =========
+		    1) Getting Data by getter methods after getting values 
+            2) Create PreparedStatement object of JDBC
+		    3) Now set Data to PreparedStatement and ExecuteQuery.
+ 
+ 
+ 
+ 
 
 
 
