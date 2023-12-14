@@ -1,0 +1,57 @@
+Hybernate
+=========
+What is Data Persistant ?
+-------------------------
+Persistance : Storing the data permenantly.
+It has 3 component :
+1) Data : represents what is persist.
+2) Medium :represents how to persist.
+3) Storage :represents where to persist.
+
+Data in java 
+------------
+Row data : stores in different variable.
+Java object : class object.
+
+ACID : properties are there for data.
+-> To read and write data we have iostream classes.
+-> In java have serialization/deserialisation which convert java objects into bytes and vice-versa and can be write in file.
+
+Data :
+------
+	1) Row Data
+	2) objects
+
+Medium :
+--------
+	1) java I/O streams
+	2) serialization/deserialisation
+	3) JDBC 
+
+Storage :
+---------
+	1) file
+	2) Database 
+ 
+ -> Every file contain Some Extension like .c .cpp .html but file which is not 
+ related to perticular technologies is called flat file.
+ -> 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
