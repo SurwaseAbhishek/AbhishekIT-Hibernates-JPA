@@ -1,0 +1,39 @@
+@ What is JPA
+-------------
+# Java persistant API
+# initially multiple venders provide ORM tool to make object Model and Relational Model to work Together.
+# Switching from 1 ORM tool to Another ORM tool is hard form developer
+  so sun-microsystem give specification Of JPA it is interfaces but not implementing classes
+  all ORM venders provide implementation of there specific ORM tool and hybernate is one of them.
+# Most of JPA specification is created by teking the features from hibernate and some features from TopLinks.
+
+JPA [specification]
+-------------------
+# All this are JPA Providers / Vendors
+-> hibernate
+-> EclipseLink
+-> OpenJPA
+
+# What is difference between the DAO classes directely using hibernate and using JPA ?
+--------------------------------------------------------------------------------------
+# If we write the DAO classes directely using hibernate then whenever if we want
+  to switch to Another ORM tool all the DAO classes must be modified.
+# If we write the DAO classes using JPA the whenever if we want to switch to Another ORM tool,
+  just we only need to modify thr project configuration file
+
+
+Features of hibernate
+=====================
+1) HQL (hybernate Query Language) :
+-----------------------------------
+select * from Employee     -> SQL 
+select e from Employee e   -> HQL
+
+select ename,eno from Employee    -> SQL
+select e.EmployeeName,e.EmployeeNo from Employee e  -> HQL
+
+# It is HQL own Query Language.
+# Hibernate provides HQL to make the DAO classes as DB-independent.
+# SQL are DB dependent HQL are DB independent.
+# SQL and HQL are same they dont bother on developer.
+# In SQL we use columnName and table. whereas in HQL we use class Name and Reference.
