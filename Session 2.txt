@@ -1,0 +1,68 @@
+# Why we need ORM tools ?
+-----------------------
+ORM : Object Relation Mapping 
+
+Technology : JDBC
+==================
+Problem in JDBC :
+-----------------
+Employee									Database
+========									=========
+			-> 1)Call Getter		 ->		
+RollNo		-> 2)Prepared Statement  ->		101 Abhi 30000
+Name		-> 3)Set the Data		 ->		102 Akash 50000
+salary		-> 4)Execute It			 ->		103 Ajay 40000
+
+Technology : ORM 
+================
+Employee									Database
+========									=========
+					 		
+RollNo										101 Abhi 30000
+Name		->		save()		->			102 Akash 50000
+salary										103 Ajay 40000
+
+
+Java Application contain mutiple classes
+----------------------------------------
+class 1							-					Table
+class 2							O					Records 
+class 3							R					Records
+class 4							M					Records
+class 5							-					-------
+
+# ORM tools are used to transfer the java Objects between our java Application and Database.
+# Hybernate is open source ORM tool privide by JBoss Community it is internal part of redHat.
+# Multiple ORM tools : TopLink,MyBatisORMLite,DataNucleous etc.
+
+
+@ frameworks provide set of libraries to perform task where IDE's  are used to write code faster.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
